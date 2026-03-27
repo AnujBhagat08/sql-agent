@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "^3.0.48",
-    "@ai-sdk/react": "^3.0.139",
+    "@ai-sdk/react": "^3.0.142",
     "@libsql/client": "^0.17.2",
-    "ai": "^6.0.137",
+    "ai": "^6.0.140",
     "dotenv": "^17.3.1",
     "drizzle-kit": "^0.31.10",
     "drizzle-orm": "^0.45.1",
