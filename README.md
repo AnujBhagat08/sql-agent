@@ -55,19 +55,6 @@ Instead of writing SQL manually, users can simply ask questions like:
 5. Query is executed on the database
 6. Results are returned and displayed 
 
----
-
-## 📸 UI Preview
-
-> Clean chat interface with structured table output
-
-* User query → AI response
-* SQL query preview
-* Tabular data visualization (Users / Products)
-
-*(Add screenshots here for better impact)*
-
----
 
 ## 🚀 Getting Started
 
