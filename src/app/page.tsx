@@ -15,7 +15,7 @@ type AIOutputput = {
 
 export default function Chat() {
   const [input, setInput] = useState("");
-  const { messages, sendMessage, isLoading } = useChat();
+  const { messages, sendMessage,  } = useChat();
 
   return (
     <div className="flex flex-col w-full max-w-4xl py-12 mx-auto px-4 min-h-screen bg-white dark:bg-zinc-950">
@@ -93,7 +93,7 @@ export default function Chat() {
                     // 4. PROCESSING / THINKING STATE
                     case "step-start":
                       // Only show if it's the last message and currently loading
-                      if (!isLastMessage || !isLoading) return null;
+                      if (!isLastMessage ) return null;
                       return (
                         <div key={`${message.id}-${i}`} className="flex items-center gap-3 px-5 py-3 my-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 w-fit">
                           <div className="flex gap-1">
@@ -135,7 +135,7 @@ export default function Chat() {
           <button
             className="absolute right-7 p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg transition-colors disabled:opacity-50"
             type="submit"
-            disabled={isLoading || !input.trim()}
+            disabled={ !input.trim()}
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="m5 12 7-7 7 7" />
